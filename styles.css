@@ -21,6 +21,22 @@ body {
   font-family: 'Source Serif 4', Georgia, serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+body.bg-broadcast {
+  background-image:
+    linear-gradient(180deg, rgba(11,13,14,0.90) 0%, rgba(11,13,14,0.94) 45%, rgba(11,13,14,0.99) 100%),
+    url('images/monitor-wall.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 900px) {
+  body.bg-broadcast {
+    background-attachment: fixed;
+  }
 }
 
 h1, h2, h3, nav, .label, button, .btn {
