@@ -256,7 +256,8 @@ nav.primary a:hover {
 /* ---------- Section generic ---------- */
 
 .section {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
   border-top: 1px solid var(--panel-line);
 }
 
