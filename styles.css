@@ -175,7 +175,7 @@ nav.primary a:hover {
 }
 
 .tag {
-  font-size: 17px;
+  font-size: 34px;
   color: var(--accent);
   font-weight: 600;
   margin: 0 0 18px;
@@ -274,9 +274,24 @@ nav.primary a:hover {
 
 /* ---------- About: era timeline ---------- */
 
+.about-banner {
+  width: 100%;
+  height: clamp(280px, 42vw, 460px);
+  overflow: hidden;
+  border-bottom: 1px solid var(--panel-line);
+}
+
+.about-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
 .bio-top {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   align-items: start;
   margin-bottom: 10px;
@@ -299,15 +314,15 @@ nav.primary a:hover {
   padding: 34px 0;
   border-top: 1px solid var(--panel-line);
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 40px;
 }
 
 .era-time {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
+  font-size: 28px;
   color: var(--accent);
-  white-space: nowrap;
+  line-height: 1.15;
   padding-top: 4px;
 }
 
@@ -447,6 +462,18 @@ footer a:hover {
   .bio-top img { width: 160px; }
   .hero { padding: 60px 0 50px; }
   nav.primary { gap: 18px; font-size: 13px; }
+  .about-banner {
+    height: 190px;
+  }
+  .about-banner img {
+    object-position: center 15%;
+  }
+  .era-time {
+    font-size: 20px;
+  }
+  .tag {
+    font-size: 24px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
