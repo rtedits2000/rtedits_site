@@ -276,7 +276,7 @@ nav.primary a:hover {
 
 .about-banner {
   width: 100%;
-  height: clamp(280px, 42vw, 460px);
+  height: clamp(200px, 26vw, 320px);
   overflow: hidden;
   border-bottom: 1px solid var(--panel-line);
 }
@@ -285,7 +285,7 @@ nav.primary a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 42%;
   display: block;
 }
 
@@ -463,10 +463,10 @@ footer a:hover {
   .hero { padding: 60px 0 50px; }
   nav.primary { gap: 18px; font-size: 13px; }
   .about-banner {
-    height: 190px;
+    height: 160px;
   }
   .about-banner img {
-    object-position: center 15%;
+    object-position: center 35%;
   }
   .era-time {
     font-size: 20px;
